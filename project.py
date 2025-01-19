@@ -112,7 +112,9 @@ class PriceMachine:
         '''
         else:
             with open(fname, 'r', encoding='utf-8') as f:
-                result = f.read().replace('</body></html>', '')  # удаляем body и html чтоб
+
+                result = f.read().replace('</body></html>', '')  # удаляем body и html для новых данных
+
 
         result += f'''
                     <h2>Текст который использовался в поиске: {search_text}</h2>
