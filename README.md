@@ -4,7 +4,7 @@
 
 ## Требования:
 
-- Python 3.10+
+- Python 3.6+
 - os
 - csv
 - json
