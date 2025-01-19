@@ -184,9 +184,9 @@ class PriceMachine:
         try:
             with open(fname, 'w', encoding='utf-8') as f:
                 json.dump(results, f, ensure_ascii=False, indent=4)
-            return f"Data exported to {fname}"
+            return f"Данный успешно экспортированы в: {fname}"
         except Exception as e:
-            return f"Error exporting to JSON: {e}"
+            return f"Ошибка при экспорте в JSON: {e}"
 
 
 def project():
